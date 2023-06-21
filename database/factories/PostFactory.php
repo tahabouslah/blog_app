@@ -22,9 +22,8 @@ class PostFactory extends Factory
             'title' => fake()->sentence(),
             'body' => fake()->text(),
             'image' => fake()->imageUrl(640, 480, 'animals', true),
-            "cat_id" => Category::get('id')->random(),
-            'user_id' => User::get("id")->random(),
-            'created_at' => now()
+            "cat_id" => 1,
+            'user_id' => 1
         ];
     }
 }

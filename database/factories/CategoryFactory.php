@@ -19,7 +19,6 @@ class CategoryFactory extends Factory
         return [
             'name' => fake()->word(),
             'description' => fake()->sentence(),
-            'created_at' => now()
         ];
     }
 }

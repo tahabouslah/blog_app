@@ -20,9 +20,8 @@ class CommentFactory extends Factory
     {
         return [
             'comment' => fake()->sentence(),
-            'post_id' => Post::get('id')->random(),
-            'user_id' => User::get('id')->random(),
-            'created_at' => now()
+            'post_id' =>1,
+            'user_id' => 1,
         ];
     }
 }
