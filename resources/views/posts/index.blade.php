@@ -28,7 +28,7 @@
                     <td>{{substr($p->body, 50).'...'}}</td>
                     <td>{{$p->user->name}}</td>
                     <td>
-                        <div class="btn btn-outline-info">Show</div>
+                        <a href="/posts/{{$p->id}}" > <div class="btn btn-outline-info">Show</div></a>
                         <div class="btn btn-outline-warning">Edit</div>
                         <div class="btn btn-outline-danger">Delete</div>
                     </td>
