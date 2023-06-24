@@ -1,1 +1,1 @@
-Home page
+Dashboard page
