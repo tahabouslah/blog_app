@@ -20,7 +20,7 @@ class PostFactory extends Factory
     {
         return [
             'title' => fake()->sentence(),
-            'body' => fake()->text(),
+            'body' => fake()->text(10000),
             'image' => fake()->imageUrl(640, 480, 'animals', true),
             "cat_id" => 1,
             'user_id' => 1

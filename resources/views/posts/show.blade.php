@@ -16,6 +16,17 @@
        <div class="container">
 
         <h1>Post Details :  </h1>
+        <div class="card mb-3">
+            <img src="{{$posts->image}}" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">{{$posts->title}}</h5>
+              <h5 class="card-title">Author : {{$posts->user->name}}</h5>
+              <p class="card-text">{{$posts->body}}</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated {{$posts->updated_at}}</small></p>
+              <p class="card-text"><small class="text-body-secondary">Created at : {{$posts->created_at}}</small></p>
+
+            </div>
+          </div>
        </div>
     </body>
     </html>
